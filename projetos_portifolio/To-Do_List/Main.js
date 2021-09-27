@@ -1,7 +1,7 @@
 import BotaoDeleta from './Componentes/deletatarefa.js';
 import BotaoConclui from './Componentes/conclui_tarefas.js';
 
-function criarTarefa(evento){
+(()=> {function criarTarefa(evento){
         evento.preventDefault();
         const input1 = document.getElementById('input1');
         const valorDoInput1= input1.value;
@@ -17,4 +17,4 @@ function criarTarefa(evento){
 }
 const novaTarefa = document.getElementById('button');
 
-novaTarefa.addEventListener('click',criarTarefa);
+novaTarefa.addEventListener('click',criarTarefa);})
